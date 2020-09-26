@@ -4,11 +4,10 @@
 
 3. cd server /* as my concurrently dependency was not supporting for npm install*/
 4. npm install
+5. node index
 5. cd..
 6. cd client
 7. npm install
-8. cd..  
-9. npm install
-10. npm run dev
+8. npm start
 
 
