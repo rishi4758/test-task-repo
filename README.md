@@ -7,7 +7,8 @@
 5. cd..
 6. cd client
 7. npm install
-8. cd..   
-9. npm run dev
+8. cd..  
+9. npm install
+10. npm run dev
 
 
