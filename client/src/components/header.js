@@ -2,6 +2,22 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { useSelector } from "react-redux";
+
+const Header = () => {
+  const classes = useStyles();
+  const data = useSelector((state) => state.data.total);
+  return (
+    <div className={classes.container}>
+      <div className={classes.mainText}>Test Application</div>
+      <div className={classes.cartText}>
+        <div className={classes.total}>Total in cart:</div>
+        <div className={classes.subText}>{data}item(s)</div>
+      </div>
+    </div>
+  );
+};
+export default Header;
+
 const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
@@ -45,17 +61,3 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const Header = () => {
-  const classes = useStyles();
-  const data = useSelector((state) => state.data.total);
-  return (
-    <div className={classes.container}>
-      <div className={classes.mainText}>Test Application</div>
-      <div className={classes.cartText}>
-        <div className={classes.total}>Total in cart:</div>
-        <div className={classes.subText}>{data}item(s)</div>
-      </div>
-    </div>
-  );
-};
-export default Header;
