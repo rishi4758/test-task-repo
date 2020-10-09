@@ -11,109 +11,7 @@ import MuiDialogActions from "@material-ui/core/DialogActions";
 
 import Grid from "@material-ui/core/Grid";
 
-const DialogContent = withStyles((theme) => ({
-  root: {
-    padding: theme.spacing(2),
-  },
-}))(MuiDialogContent);
 
-const DialogActions = withStyles((theme) => ({
-  root: {
-    margin: 0,
-    padding: theme.spacing(1),
-  },
-}))(MuiDialogActions);
-
-const useStyles = makeStyles((theme) => ({
-  submitButton: {
-    border: "1px solid #black",
-
-    width: "90px",
-
-    textTransform: "none",
-    borderRadius: "3em",
-    backgroundColor: "white",
-    color: "black",
-    fontWeight: "bold",
-    marginRight: "40px",
-    "&:hover": {
-      color: "#6600ff",
-
-      border: "1px solid #ffcc00",
-    },
-    content: {
-      display: "flex",
-      flexDirection: "row",
-    },
-    col1: {
-      display: "flex",
-      flexDirection: "column",
-    },
-    col2: {
-      display: "flex",
-      flexDirection: "column",
-    },
-  },
-  name: {
-    fontSize: 30,
-    fontWeight: 700,
-  },
-  price: {
-    fontSize: 30,
-    fontWeight: 700,
-  },
-  item: {
-    fontSize: 30,
-    fontWeight: 700,
-    width: 55,
-    textAlign: "center",
-    border: "1px solid black",
-  },
-  description: {
-    fontSize: 18,
-    color: "black",
-    fontFamily: "italic",
-    fontWeight: 600,
-    overFlow: "hidden",
-  },
-
-  cartButton: {
-    border: "1px solid #black",
-    width: "130px",
-
-    textTransform: "none",
-    borderRadius: "5em",
-    backgroundColor: "#0049b7",
-    color: "black",
-    fontWeight: "bold",
-    marginRight: "40px",
-    marginTop: 30,
-    "&:hover": {
-      border: "2px solid black ",
-    },
-  },
-  removeButton: {
-    border: "1px solid ",
-
-    width: "170px",
-    textTransform: "none",
-    borderRadius: "5em",
-    backgroundColor: "#0049b7",
-    color: "black",
-    fontWeight: "bold",
-    marginRight: "40px",
-    marginTop: 30,
-    "&:hover": {
-      border: "2px solid black",
-    },
-  },
-  cartValue: {
-    fontSize: 20,
-    marginTop: 10,
-    fontWeight: 700,
-    textAlign: "center",
-  },
-}));
 export default function CustomizedDialogs({
   id,
 
@@ -248,3 +146,107 @@ export default function CustomizedDialogs({
     </div>
   );
 }
+
+const DialogContent = withStyles((theme) => ({
+  root: {
+    padding: theme.spacing(2),
+  },
+}))(MuiDialogContent);
+
+const DialogActions = withStyles((theme) => ({
+  root: {
+    margin: 0,
+    padding: theme.spacing(1),
+  },
+}))(MuiDialogActions);
+
+const useStyles = makeStyles((theme) => ({
+  submitButton: {
+    border: "1px solid #black",
+
+    width: "90px",
+
+    textTransform: "none",
+    borderRadius: "3em",
+    backgroundColor: "white",
+    color: "black",
+    fontWeight: "bold",
+    marginRight: "40px",
+    "&:hover": {
+      color: "#6600ff",
+
+      border: "1px solid #ffcc00",
+    },
+    content: {
+      display: "flex",
+      flexDirection: "row",
+    },
+    col1: {
+      display: "flex",
+      flexDirection: "column",
+    },
+    col2: {
+      display: "flex",
+      flexDirection: "column",
+    },
+  },
+  name: {
+    fontSize: 30,
+    fontWeight: 700,
+  },
+  price: {
+    fontSize: 30,
+    fontWeight: 700,
+  },
+  item: {
+    fontSize: 30,
+    fontWeight: 700,
+    width: 55,
+    textAlign: "center",
+    border: "1px solid black",
+  },
+  description: {
+    fontSize: 18,
+    color: "black",
+    fontFamily: "italic",
+    fontWeight: 600,
+    overFlow: "hidden",
+  },
+
+  cartButton: {
+    border: "1px solid #black",
+    width: "130px",
+
+    textTransform: "none",
+    borderRadius: "5em",
+    backgroundColor: "#0049b7",
+    color: "black",
+    fontWeight: "bold",
+    marginRight: "40px",
+    marginTop: 30,
+    "&:hover": {
+      border: "2px solid black ",
+    },
+  },
+  removeButton: {
+    border: "1px solid ",
+
+    width: "170px",
+    textTransform: "none",
+    borderRadius: "5em",
+    backgroundColor: "#0049b7",
+    color: "black",
+    fontWeight: "bold",
+    marginRight: "40px",
+    marginTop: 30,
+    "&:hover": {
+      border: "2px solid black",
+    },
+  },
+  cartValue: {
+    fontSize: 20,
+    marginTop: 10,
+    fontWeight: 700,
+    textAlign: "center",
+  },
+}));
