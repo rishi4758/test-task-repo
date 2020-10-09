@@ -4,39 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Grid } from "@material-ui/core";
 import * as actions from "../store/actions";
-const useStyles = makeStyles((theme) => ({
-  listContainer: {
-    flex: 1,
-    margin: 40,
-    padding: 60,
-    marginLeft: 200,
-    marginRight: 200,
-
-    borderRadius: 15,
-    marginTop: 0,
-    border: "solid 1px",
-    "&:hover": {
-      border: "3px solid #99ccff",
-    },
-  },
-
-  itemText: { border: "solid 2px", padding: 3 },
-  shortInfo: {
-    flex: 1,
-    cursor: "pointer",
-    width: "100%",
-    marginTop: 0,
-
-    fontWeight: 700,
-    padding: 8,
-    fontSize: 22,
-    display: "flex",
-    height: 30,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    "&:hover": {},
-  },
-}));
 
 function form(props) {
   const classes = useStyles();
@@ -149,3 +116,38 @@ function form(props) {
 }
 
 export default form;
+
+const useStyles = makeStyles((theme) => ({
+  listContainer: {
+    flex: 1,
+    margin: 40,
+    padding: 60,
+    marginLeft: 200,
+    marginRight: 200,
+
+    borderRadius: 15,
+    marginTop: 0,
+    border: "solid 1px",
+    "&:hover": {
+      border: "3px solid #99ccff",
+    },
+  },
+
+  itemText: { border: "solid 2px", padding: 3 },
+  shortInfo: {
+    flex: 1,
+    cursor: "pointer",
+    width: "100%",
+    marginTop: 0,
+
+    fontWeight: 700,
+    padding: 8,
+    fontSize: 22,
+    display: "flex",
+    height: 30,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    "&:hover": {},
+  },
+}));
+
